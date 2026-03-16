@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO META -->
+
+  <title>Sartoria Tagliacuci Novara | Abiti su Misura, Riparazioni, Divise</title>
+  <meta name="description" content="Sartoria Tagliacuci a Novara, Via Gnifetti 13B. Abiti su misura, riparazioni, aggiusture e abbigliamento da lavoro. La sartoria di fiducia a Novara e dintorni." />
+  <meta name="keywords" content="sartoria Novara, abiti su misura Novara, riparazioni abiti Novara, aggiusture Novara, sarto Novara, sartoria Tagliacuci, divise lavoro Novara, sartoria Novara centro, abiti cerimonia Novara" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Sartoria Tagliacuci" />
+  <link rel="canonical" href="https://www.sartoriatagliacuci.it/" />
+
+  <!-- Open Graph -->
+
+  <meta property="og:title" content="Sartoria Tagliacuci Novara" />
+  <meta property="og:description" content="Abiti su misura, riparazioni e abbigliamento da lavoro. Via Gnifetti 13B, Novara." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.sartoriatagliacuci.it/" />
+
+  <!-- Schema.org LocalBusiness -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    "name": "Sartoria Tagliacuci",
+    "description": "Sartoria a Novara specializzata in abiti su misura, riparazioni, aggiusture e abbigliamento da lavoro.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Gnifetti 13B",
+      "addressLocality": "Novara",
+      "addressRegion": "NO",
+      "addressCountry": "IT"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 45.4498,
+      "longitude": 8.6218
+    },
+    "url": "https://www.sartoriatagliacuci.it",
+    "areaServed": ["Novara", "Borgomanero", "Arona", "Galliate", "Trecate", "Vigevano"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servizi Sartoriali",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Abiti su misura"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Riparazioni e aggiusture"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Abbigliamento da lavoro e divise"}}
+      ]
+    }
+  }
+  </script>
+
+  <!-- Favicon & PWA -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#A83D58" />
+
+  <!-- Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --white: #ffffff;
+      --dark: #40413B;
+      --accent: #A83D58;
+      --accent-light: #c45a73;
+      --gray-soft: #f5f4f0;
+      --gray-mid: #e8e6e0;
+      --gray-text: #888880;
+      --font-display: 'Cormorant Garamond', serif;
+      --font-body: 'Jost', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--white);
+      color: var(--dark);
+      overflow-x: hidden;
+    }
+
+    /* ─── NAVBAR ─── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5vw;
+      height: 70px;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--gray-mid);
+      transition: box-shadow 0.3s;
+    }
+    nav.scrolled { box-shadow: 0 2px 20px rgba(64,65,59,0.1); }
+
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: var(--dark);
+      letter-spacing: 0.04em;
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--accent); }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
+    .nav-links a {
+      font-family: var(--font-body);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--dark);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--accent); }
+
+    .nav-cta {
+      background: var(--accent);
+      color: var(--white) !important;
+      padding: 0.5rem 1.2rem;
+      border-radius: 2px;
+    }
+    .nav-cta:hover { background: var(--accent-light); color: var(--white) !important; }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--dark);
+      transition: all 0.3s;
+    }
+
+    /* ─── HERO ─── */
+    #hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-top: 70px;
+    }
+
+    .hero-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 8vw 5vw 8vw 8vw;
+      position: relative;
+    }
+
+    .hero-eyebrow {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.2s forwards;
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 5vw, 5.5rem);
+      font-weight: 300;
+      line-height: 1.05;
+      color: var(--dark);
+      opacity: 0;
+      animation: fadeUp 0.8s 0.4s forwards;
+    }
+    .hero-title em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .hero-sub {
+      margin-top: 1.8rem;
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.7;
+      color: var(--gray-text);
+      max-width: 420px;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.6s forwards;
+    }
+
+    .hero-address {
+      margin-top: 1.5rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--dark);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.7s forwards;
+    }
+    .hero-address::before {
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 2px;
+      background: var(--accent);
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.85s forwards;
+    }
+
+    .btn-primary {
+      background: var(--dark);
+      color: var(--white);
+      padding: 0.9rem 2rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 2px solid var(--dark);
+      transition: all 0.25s;
+    }
+    .btn-primary:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--dark);
+      padding: 0.9rem 2rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 2px solid var(--gray-mid);
+      transition: all 0.25s;
+    }
+    .btn-outline:hover {
+      border-color: var(--dark);
+    }
+
+    .hero-right {
+      background: var(--dark);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      animation: fadeIn 1.2s 0.3s forwards;
+    }
+
+    .hero-pattern {
+      position: absolute;
+      inset: 0;
+      opacity: 0.08;
+      background-image:
+        repeating-linear-gradient(
+          45deg,
+          var(--white) 0,
+          var(--white) 1px,
+          transparent 0,
+          transparent 50%
+        );
+      background-size: 20px 20px;
+    }
+
+    .hero-emblem {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      color: var(--white);
+    }
+    .hero-emblem-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 3.5vw, 4rem);
+      font-weight: 300;
+      letter-spacing: 0.1em;
+      line-height: 1.2;
+    }
+    .hero-emblem-sub {
+      font-size: 0.7rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-top: 0.8rem;
+    }
+    .hero-emblem-line {
+      width: 60px;
+      height: 1px;
+      background: var(--accent);
+      margin: 1rem auto;
+    }
+    .hero-emblem-novara {
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      opacity: 0.6;
+    }
+
+    /* ─── STRIP ─── */
+    .strip {
+      background: var(--accent);
+      color: var(--white);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
+      padding: 1.2rem 5vw;
+      flex-wrap: wrap;
+    }
+    .strip-item {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .strip-item::before {
+      content: '✦';
+      font-size: 0.6rem;
+    }
+
+    /* ─── SECTIONS ─── */
+    section { padding: 7rem 8vw; }
+
+    .section-eyebrow {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 3.5vw, 3.8rem);
+      font-weight: 300;
+      line-height: 1.1;
+      color: var(--dark);
+    }
+    .section-title em { font-style: italic; color: var(--accent); }
+
+    .divider {
+      width: 50px;
+      height: 2px;
+      background: var(--accent);
+      margin: 1.5rem 0 2rem;
+    }
+
+    /* ─── SERVIZI ─── */
+    #servizi { background: var(--white); }
+
+    .servizi-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      margin-top: 4rem;
+    }
+
+    .servizio-card {
+      background: var(--gray-soft);
+      padding: 3rem 2.5rem;
+      position: relative;
+      overflow: hidden;
+      transition: background 0.3s;
+      cursor: default;
+    }
+    .servizio-card::before {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 0; height: 3px;
+      background: var(--accent);
+      transition: width 0.4s ease;
+    }
+    .servizio-card:hover::before { width: 100%; }
+    .servizio-card:hover { background: var(--gray-mid); }
+
+    .card-num {
+      font-family: var(--font-display);
+      font-size: 3.5rem;
+      font-weight: 300;
+      color: var(--gray-mid);
+      line-height: 1;
+      margin-bottom: 1.5rem;
+      transition: color 0.3s;
+    }
+    .servizio-card:hover .card-num { color: var(--accent); opacity: 0.3; }
+
+    .card-title {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 1rem;
+    }
+
+    .card-text {
+      font-size: 0.9rem;
+      font-weight: 300;
+      line-height: 1.7;
+      color: var(--gray-text);
+    }
+
+    .card-items {
+      list-style: none;
+      margin-top: 1.2rem;
+    }
+    .card-items li {
+      font-size: 0.82rem;
+      font-weight: 400;
+      color: var(--dark);
+      padding: 0.35rem 0;
+      border-bottom: 1px solid var(--gray-mid);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .card-items li::before {
+      content: '—';
+      color: var(--accent);
+      font-size: 0.7rem;
+    }
+
+    /* ─── PERCHÉ NOI ─── */
+    #perche { background: var(--dark); color: var(--white); }
+    #perche .section-title { color: var(--white); }
+    #perche .divider { background: var(--accent); }
+
+    .perche-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      margin-top: 4rem;
+      align-items: center;
+    }
+
+    .perche-features { display: flex; flex-direction: column; gap: 2rem; }
+
+    .feature {
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .feature:last-child { border-bottom: none; padding-bottom: 0; }
+
+    .feature-icon {
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.1rem;
+    }
+
+    .feature-title {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .feature-text {
+      font-size: 0.88rem;
+      font-weight: 300;
+      line-height: 1.6;
+      color: rgba(255,255,255,0.55);
+    }
+
+    .perche-visual {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .stat-box {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 2.5rem;
+      text-align: center;
+      transition: background 0.3s;
+    }
+    .stat-box:hover { background: rgba(168,61,88,0.15); }
+
+    .stat-num {
+      font-family: var(--font-display);
+      font-size: 3.5rem;
+      font-weight: 300;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+      margin-top: 0.5rem;
+    }
+
+    /* ─── ZONE SERVITE ─── */
+    #zone { background: var(--gray-soft); }
+
+    .zone-content {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 5rem;
+      margin-top: 3rem;
+      align-items: start;
+    }
+
+    .zone-text {
+      font-size: 0.95rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: var(--gray-text);
+    }
+    .zone-text strong { color: var(--dark); font-weight: 500; }
+
+    .zone-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 2rem;
+    }
+
+    .zone-tag {
+      background: var(--white);
+      border: 1px solid var(--gray-mid);
+      padding: 0.5rem 1.2rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      color: var(--dark);
+      transition: all 0.2s;
+    }
+    .zone-tag:hover {
+      background: var(--accent);
+      color: var(--white);
+      border-color: var(--accent);
+    }
+    .zone-tag.primary {
+      background: var(--dark);
+      color: var(--white);
+      border-color: var(--dark);
+      font-weight: 600;
+    }
+
+    /* ─── CONTATTI ─── */
+    #contatti {
+      background: var(--white);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      padding: 0;
+    }
+
+    .contatti-left {
+      padding: 7rem 5vw 7rem 8vw;
+    }
+
+    .contatti-right {
+      background: var(--dark);
+      padding: 7rem 8vw 7rem 5vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: var(--white);
+    }
+    .contatti-right .section-title { color: var(--white); }
+
+    .contact-items { margin-top: 2.5rem; display: flex; flex-direction: column; gap: 1.8rem; }
+
+    .contact-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .contact-label {
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .contact-value {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--white);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .contact-value:hover { color: var(--accent); }
+
+    .orari-table { width: 100%; margin-top: 2.5rem; border-collapse: collapse; }
+    .orari-table td {
+      padding: 0.6rem 0;
+      font-size: 0.88rem;
+      font-weight: 300;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      color: rgba(255,255,255,0.75);
+    }
+    .orari-table td:first-child {
+      font-weight: 500;
+      color: var(--white);
+      width: 50%;
+    }
+
+    /* FORM */
+    .form-group { margin-bottom: 1.2rem; }
+    .form-group label {
+      display: block;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: var(--dark);
+      margin-bottom: 0.5rem;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border: 1px solid var(--gray-mid);
+      background: var(--gray-soft);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      color: var(--dark);
+      outline: none;
+      transition: border-color 0.2s, background 0.2s;
+      border-radius: 0;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent);
+      background: var(--white);
+    }
+    .form-group textarea { resize: vertical; min-height: 110px; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+    .btn-submit {
+      width: 100%;
+      padding: 1rem;
+      background: var(--accent);
+      color: var(--white);
+      border: none;
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 0.5rem;
+    }
+    .btn-submit:hover { background: var(--dark); }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,0.45);
+      padding: 2rem 8vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    footer .footer-logo {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.8);
+      font-weight: 400;
+    }
+    footer p { font-size: 0.78rem; }
+    footer a { color: var(--accent); text-decoration: none; }
+
+    /* ─── ANIMATIONS ─── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ─── RESPONSIVE ─── */
+
+    /* Large desktop cap */
+    @media (min-width: 1400px) {
+      nav { padding: 0 6vw; }
+      section { padding: 8rem 10vw; }
+      #hero { min-height: 90vh; }
+    }
+
+    /* ── Tablet (≤ 1100px) ── */
+    @media (max-width: 1100px) {
+      .servizi-grid { grid-template-columns: repeat(2, 1fr); }
+      .perche-grid { gap: 3rem; }
+      .zone-content { gap: 3rem; }
+    }
+
+    /* ── Tablet / large phone (≤ 900px) ── */
+    @media (max-width: 900px) {
+      /* Navbar */
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 70px; left: 0; right: 0;
+        background: var(--white);
+        padding: 1.5rem 6vw 2rem;
+        gap: 1.2rem;
+        border-bottom: 1px solid var(--gray-mid);
+        box-shadow: 0 8px 24px rgba(64,65,59,0.08);
+        z-index: 99;
+      }
+      .nav-links.open { display: flex; }
+      .hamburger { display: flex; }
+      .nav-links .nav-cta {
+        display: inline-block;
+        width: fit-content;
+        padding: 0.6rem 1.4rem;
+      }
+
+      /* Hero */
+      #hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-left { padding: 5rem 6vw 4rem; }
+      .hero-right { min-height: 260px; }
+
+      /* Strip */
+      .strip { gap: 1.5rem; padding: 1rem 6vw; flex-wrap: wrap; }
+
+      /* Sections */
+      section { padding: 5rem 6vw; }
+
+      /* Servizi – 2 col on tablet */
+      .servizi-grid { grid-template-columns: repeat(2, 1fr); gap: 2px; margin-top: 3rem; }
+
+      /* Perché */
+      .perche-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .perche-visual { flex-direction: row; flex-wrap: wrap; }
+      .stat-box { flex: 1 1 140px; }
+
+      /* Zone */
+      .zone-content { grid-template-columns: 1fr; gap: 2rem; }
+
+      /* Contatti */
+      #contatti { grid-template-columns: 1fr; }
+      .contatti-left { padding: 4rem 6vw 3rem; }
+      .contatti-right { padding: 3rem 6vw 4rem; }
+      .form-row { grid-template-columns: 1fr 1fr; }
+
+      /* Footer */
+      footer { flex-direction: column; text-align: center; gap: 0.6rem; padding: 1.5rem 6vw; }
+    }
+
+    /* ── Mobile (≤ 600px) ── */
+    @media (max-width: 600px) {
+      nav { padding: 0 5vw; height: 62px; }
+      .nav-logo { font-size: 1.15rem; }
+
+      /* Hero */
+      .hero-left { padding: 3.5rem 5vw 3rem; }
+      .hero-title { font-size: clamp(2.4rem, 10vw, 3.5rem); }
+      .hero-sub { font-size: 0.92rem; }
+      .hero-btns { flex-direction: column; gap: 0.8rem; }
+      .btn-primary, .btn-outline { text-align: center; width: 100%; padding: 0.85rem 1.5rem; }
+      .hero-right { min-height: 220px; }
+
+      /* Strip */
+      .strip { gap: 1rem; padding: 0.9rem 5vw; }
+      .strip-item { font-size: 0.68rem; }
+
+      /* Sections */
+      section { padding: 4rem 5vw; }
+
+      /* Servizi – 1 col on small screens */
+      .servizi-grid { grid-template-columns: 1fr; }
+      .servizio-card { padding: 2.2rem 1.8rem; }
+
+      /* Perché */
+      .perche-visual { flex-direction: column; }
+      .stat-box { padding: 1.8rem; }
+      .stat-num { font-size: 2.8rem; }
+      .feature { gap: 1rem; }
+
+      /* Zone tags */
+      .zone-tag { font-size: 0.75rem; padding: 0.4rem 0.9rem; }
+
+      /* Contatti */
+      .contatti-left { padding: 3rem 5vw 2rem; }
+      .contatti-right { padding: 2.5rem 5vw 3.5rem; }
+      .form-row { grid-template-columns: 1fr; }
+      .contact-value { font-size: 1.1rem; }
+      .orari-table td { font-size: 0.82rem; padding: 0.5rem 0; }
+
+      /* Section titles */
+      .section-title { font-size: clamp(2rem, 8vw, 3rem); }
+
+      /* Footer */
+      footer { padding: 1.5rem 5vw; }
+      footer p { font-size: 0.72rem; }
+    }
+
+    /* ── Tiny phones (≤ 380px) ── */
+    @media (max-width: 380px) {
+      .hero-title { font-size: 2.2rem; }
+      .section-title { font-size: 1.9rem; }
+      .servizio-card { padding: 1.8rem 1.4rem; }
+      .card-title { font-size: 1.35rem; }
+      .strip { display: none; } /* hide strip on very small screens */
+      .contatti-left, .contatti-right { padding: 2.5rem 5vw; }
+      .form-group input,
+      .form-group select,
+      .form-group textarea { font-size: 0.85rem; }
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- NAV -->
+
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">Sartoria <span>Tagliacuci</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#servizi">Servizi</a></li>
+      <li><a href="#perche">Chi Siamo</a></li>
+      <li><a href="#zone">Zone Servite</a></li>
+      <li><a href="/prezzi.html">Prezzi</a></li>
+      <li><a href="#contatti" class="nav-cta">Contattaci</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+
+  <section id="hero">
+    <div class="hero-left">
+      <p class="hero-eyebrow">Sartoria a Novara dal primo giorno</p>
+      <h1 class="hero-title">
+        Cucito<br>
+        <em>su misura</em><br>
+        per ogni esigenza
+      </h1>
+      <p class="hero-sub">
+        Abiti su misura, riparazioni rapide e abbigliamento da lavoro.<br>
+        Unica sede a Novara — Serviamo tutta la provincia.
+      </p>
+      <p class="hero-address">Via Gnifetti 13B — Novara</p>
+      <div class="hero-btns">
+        <a href="#servizi" class="btn-primary">Scopri i Servizi</a>
+        <a href="#contatti" class="btn-outline">Prenota Appuntamento</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-pattern"></div>
+      <div class="hero-emblem">
+        <div class="hero-emblem-title">Tagli&shy;acuci</div>
+        <div class="hero-emblem-line"></div>
+        <div class="hero-emblem-sub">Sartoria Artigianale</div>
+        <div class="hero-emblem-novara">Novara · Italia</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRIP -->
+
+  <div class="strip">
+    <div class="strip-item">Abiti su Misura</div>
+    <div class="strip-item">Riparazioni Rapide</div>
+    <div class="strip-item">Divise da Lavoro</div>
+    <div class="strip-item">Novara & Provincia</div>
+  </div>
+
+  <!-- SERVIZI -->
+
+  <section id="servizi">
+    <p class="section-eyebrow reveal">Cosa Facciamo</p>
+    <h2 class="section-title reveal">I nostri <em>servizi</em></h2>
+    <div class="divider reveal"></div>
+    <div class="servizi-grid">
+
+```
+  <div class="servizio-card reveal">
+    <div class="card-num">01</div>
+    <h3 class="card-title">Abiti su Misura</h3>
+    <p class="card-text">Ogni capo nasce dalle tue misure esatte e dal tuo stile personale. Ti seguiamo dalla scelta del tessuto alla prova finale.</p>
+    <ul class="card-items">
+      <li>Abiti uomo e donna</li>
+      <li>Pantaloni su misura</li>
+      <li>Giacche e capispalla</li>
+      <li>Abbigliamento cerimonia</li>
+    </ul>
+  </div>
+
+  <div class="servizio-card reveal">
+    <div class="card-num">02</div>
+    <h3 class="card-title">Riparazioni & Aggiusture</h3>
+    <p class="card-text">Il tuo capo preferito ha bisogno di cure? Riparazioni veloci e precise su qualsiasi tipo di abbigliamento.</p>
+    <ul class="card-items">
+      <li>Accorciamenti e allargamenti</li>
+      <li>Sostituzione cerniere</li>
+      <li>Rattoppi e rammendi</li>
+      <li>Rifoderatura</li>
+    </ul>
+  </div>
+
+  <div class="servizio-card reveal">
+    <div class="card-num">03</div>
+    <h3 class="card-title">Abbigliamento da Lavoro</h3>
+    <p class="card-text">Divise professionali e uniformi personalizzate per aziende, esercizi commerciali e strutture ricettive.</p>
+    <ul class="card-items">
+      <li>Uniformi aziendali</li>
+      <li>Divise ristoranti e hotel</li>
+      <li>Abbigliamento sanitario</li>
+      <li>Personalizzazione con logo</li>
+    </ul>
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- PERCHÉ NOI -->
+
+  <section id="perche">
+    <div class="perche-grid">
+      <div>
+        <p class="section-eyebrow reveal">Perché Sceglierci</p>
+        <h2 class="section-title reveal">Artigianato <em>vero</em>,<br>risultati visibili</h2>
+        <div class="divider reveal"></div>
+        <div class="perche-features">
+          <div class="feature reveal">
+            <div class="feature-icon">✂</div>
+            <div>
+              <div class="feature-title">Lavorazione Manuale</div>
+              <div class="feature-text">Ogni punto è curato a mano. Nessuna produzione in serie — solo sartoria autentica con attenzione ai dettagli.</div>
+            </div>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">⚡</div>
+            <div>
+              <div class="feature-title">Consegne Rapide</div>
+              <div class="feature-text">Rispettiamo i tuoi tempi. Le riparazioni urgenti vengono gestite con priorità, senza compromessi sulla qualità.</div>
+            </div>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">📍</div>
+            <div>
+              <div class="feature-title">Radicati a Novara</div>
+              <div class="feature-text">Conosciamo la nostra città e la nostra clientela. Un punto di riferimento stabile per tutta la provincia.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="perche-visual">
+        <div class="stat-box reveal">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Lavoro Artigianale</div>
+        </div>
+        <div class="stat-box reveal">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Servizi Specializzati</div>
+        </div>
+        <div class="stat-box reveal">
+          <div class="stat-num">Novara</div>
+          <div class="stat-label">La nostra città, la nostra casa</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ZONE SERVITE -->
+
+  <section id="zone">
+    <p class="section-eyebrow reveal">Dove Operiamo</p>
+    <h2 class="section-title reveal">Unica sede a Novara,<br>serviamo tutta la <em>provincia</em></h2>
+    <div class="divider reveal"></div>
+    <div class="zone-content">
+      <div class="zone-text reveal">
+        <p>
+          La <strong>Sartoria Tagliacuci</strong> si trova nel cuore di Novara, in <strong>Via Gnifetti 13B</strong>, facilmente raggiungibile da tutta la città e dalla provincia.
+        </p>
+        <br>
+        <p>
+          Serviamo clienti da <strong>Novara e da tutti i comuni vicini</strong>: anche se siamo fisicamente solo a Novara, molti clienti vengono da Borgomanero, Arona, Galliate, Trecate o Vigevano per la nostra qualità.
+        </p>
+        <br>
+        <p>
+          Per grandi ordini di <strong>abbigliamento da lavoro</strong>, offriamo anche la possibilità di consegna o ritiro su accordo.
+        </p>
+      </div>
+      <div class="reveal">
+        <div class="zone-tags">
+          <span class="zone-tag primary">Novara</span>
+          <span class="zone-tag">Borgomanero</span>
+          <span class="zone-tag">Arona</span>
+          <span class="zone-tag">Galliate</span>
+          <span class="zone-tag">Trecate</span>
+          <span class="zone-tag">Vigevano</span>
+          <span class="zone-tag">Oleggio</span>
+          <span class="zone-tag">Bellinzago N.</span>
+          <span class="zone-tag">Cameri</span>
+          <span class="zone-tag">Romentino</span>
+          <span class="zone-tag">Biandrate</span>
+          <span class="zone-tag">Provincia di Novara</span>
+        </div>
+        <div style="margin-top: 2.5rem; padding: 2rem; background: var(--white); border-left: 3px solid var(--accent);">
+          <p style="font-size: 0.82rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;">Indirizzo</p>
+          <p style="font-family: var(--font-display); font-size: 1.4rem; color: var(--dark);">Via Gnifetti 13B, Novara</p>
+          <p style="font-size: 0.85rem; color: var(--gray-text); margin-top: 0.3rem;">Novara (NO) — Italia</p>
+          <a href="https://maps.google.com/?q=Via+Gnifetti+13B+Novara" target="_blank" class="btn-primary" style="display: inline-block; margin-top: 1.2rem; font-size: 0.75rem;">Apri su Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATTI -->
+
+  <section id="contatti">
+    <div class="contatti-left">
+      <p class="section-eyebrow reveal">Prenota</p>
+      <h2 class="section-title reveal">Scrivi o<br><em>Prenota</em></h2>
+      <div class="divider reveal"></div>
+      <form class="reveal" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Il tuo nome" required />
+          </div>
+          <div class="form-group">
+            <label for="tel">Telefono</label>
+            <input type="tel" id="tel" placeholder="+39 000 000 0000" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="tua@email.it" />
+        </div>
+        <div class="form-group">
+          <label for="servizio">Servizio richiesto</label>
+          <select id="servizio">
+            <option value="">Seleziona un servizio...</option>
+            <option>Abito su misura</option>
+            <option>Riparazione / Aggiustura</option>
+            <option>Abbigliamento da lavoro / Divise</option>
+            <option>Altro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="messaggio">Messaggio</label>
+          <textarea id="messaggio" placeholder="Descrivi brevemente cosa ti serve..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Invia Richiesta</button>
+      </form>
+    </div>
+
+```
+<div class="contatti-right">
+  <p class="section-eyebrow">Dove Siamo</p>
+  <h2 class="section-title">Vieni a <em>trovarci</em></h2>
+  <div class="divider"></div>
+  <div class="contact-items">
+    <div class="contact-item">
+      <span class="contact-label">Indirizzo</span>
+      <a href="https://maps.google.com/?q=Via+Gnifetti+13B+Novara" target="_blank" class="contact-value">Via Gnifetti 13B, Novara</a>
+    </div>
+    <div class="contact-item">
+      <span class="contact-label">Telefono</span>
+      <a href="tel:+39" class="contact-value">— aggiungi numero —</a>
+    </div>
+    <div class="contact-item">
+      <span class="contact-label">Email</span>
+      <a href="mailto:info@sartoriatagliacuci.it" class="contact-value">info@sartoriatagliacuci.it</a>
+    </div>
+  </div>
+  <table class="orari-table">
+    <tr><td>Lunedì – Venerdì</td><td>09:00 – 13:00 / 15:00 – 19:00</td></tr>
+    <tr><td>Sabato</td><td>09:00 – 13:00</td></tr>
+    <tr><td>Domenica</td><td>Chiuso</td></tr>
+  </table>
+</div>
+```
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <span class="footer-logo">Sartoria Tagliacuci</span>
+    <p>© 2025 Sartoria Tagliacuci · Via Gnifetti 13B, Novara · <a href="mailto:info@sartoriatagliacuci.it">Contattaci</a></p>
+    <p>Sartoria Novara · Abiti su misura · Riparazioni · Divise</p>
+  </footer>
+
+  <script>
+    // Navbar scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 30);
+    });
+
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 80);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Form
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('.btn-submit');
+      btn.textContent = '✓ Richiesta Inviata!';
+      btn.style.background = '#40413B';
+      setTimeout(() => {
+        btn.textContent = 'Invia Richiesta';
+        btn.style.background = '';
+        e.target.reset();
+      }, 3000);
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+  "name": "Sartoria Tagliacuci",
+  "short_name": "Tagliacuci",
+  "description": "Sartoria a Novara: abiti su misura, riparazioni, divise. Via Gnifetti 13B.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#A83D58",
+  "lang": "it",
+  "scope": "/",
+  "categories": ["shopping", "lifestyle", "fashion"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Contattaci",
+      "short_name": "Contatto",
+      "description": "Prenota un appuntamento",
+      "url": "/#contatti",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Listino Prezzi",
+      "short_name": "Prezzi",
+      "description": "Vedi il listino prezzi",
+      "url": "/prezzi.html",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

@@ -1,0 +1,98 @@
+# .htaccess – Sartoria Tagliacuci
+# Apache configuration ottimizzato per SEO e performance
+
+# ── 1. HTTPS FORZATO ─────────────────────────────────────────
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Forza HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+  # Redirect www → non-www (canonical URL senza www)
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+# ── 2. COMPRESSIONE GZIP ───────────────────────────────────────
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE font/woff2
+</IfModule>
+
+# ── 3. CACHE HEADERS ──────────────────────────────────────────
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # HTML – cache breve (contenuto aggiornabile)
+  ExpiresByType text/html                  "access plus 1 hour"
+
+  # CSS e JS
+  ExpiresByType text/css                   "access plus 1 year"
+  ExpiresByType application/javascript     "access plus 1 year"
+  ExpiresByType text/javascript            "access plus 1 year"
+
+  # Immagini
+  ExpiresByType image/jpeg                 "access plus 1 year"
+  ExpiresByType image/png                  "access plus 1 year"
+  ExpiresByType image/webp                 "access plus 1 year"
+  ExpiresByType image/gif                  "access plus 1 year"
+  ExpiresByType image/svg+xml              "access plus 1 year"
+  ExpiresByType image/x-icon               "access plus 1 year"
+
+  # Font
+  ExpiresByType font/woff                  "access plus 1 year"
+  ExpiresByType font/woff2                 "access plus 1 year"
+  ExpiresByType application/font-woff      "access plus 1 year"
+
+  # JSON / XML
+  ExpiresByType application/json           "access plus 1 day"
+  ExpiresByType application/xml            "access plus 1 day"
+  ExpiresByType text/xml                   "access plus 1 day"
+</IfModule>
+
+# Cache-Control headers
+<IfModule mod_headers.c>
+  <FilesMatch "\.(css|js|woff2|svg|png|jpg|webp|gif)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(html)$">
+    Header set Cache-Control "public, max-age=3600, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+# ── 4. SICUREZZA – PROTEZIONE FILE SENSIBILI ──────────────────
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|sql|bak|env)$">
+  Order Allow,Deny
+  Deny from all
+</FilesMatch>
+
+# Blocca accesso diretto a robots.txt da directory listing
+Options -Indexes
+
+# ── 5. SECURITY HEADERS ───────────────────────────────────────
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set X-XSS-Protection "1; mode=block"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# ── 6. PAGINA 404 PERSONALIZZATA ─────────────────────────────
+ErrorDocument 404 /404.html
+
+# ── 7. MIME TYPES MANCANTI ─────────────────────────────────────
+<IfModule mod_mime.c>
+  AddType image/webp                    .webp
+  AddType image/svg+xml                 .svg
+  AddType font/woff2                    .woff2
+  AddType application/manifest+json     .json
+</IfModule>

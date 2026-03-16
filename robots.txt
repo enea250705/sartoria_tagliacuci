@@ -1,0 +1,12 @@
+# robots.txt – Sartoria Tagliacuci
+# https://www.sartoriatagliacuci.it/
+
+User-agent: *
+Allow: /
+
+# Escludi file tecnici
+Disallow: /grazie.html
+Disallow: /*.json$
+
+# Sitemap
+Sitemap: https://www.sartoriatagliacuci.it/sitemap.xml

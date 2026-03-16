@@ -1,0 +1,142 @@
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "ClothingStore"],
+  "@id": "https://www.sartoriatagliacuci.it/#business",
+
+  "name": "Sartoria Tagliacuci",
+  "legalName": "Sartoria Tagliacuci",
+  "alternateName": "Tagliacuci Sartoria Novara",
+
+  "description": "Sartoria artigianale con unica sede a Novara. Specializzata in abiti su misura, riparazioni e aggiusture, abbigliamento da lavoro, divise professionali e lavorazioni su pelle. Serviamo Novara e tutta la provincia.",
+
+  "url": "https://www.sartoriatagliacuci.it",
+
+  "logo": "https://www.sartoriatagliacuci.it/favicon.svg",
+  "image": "https://www.sartoriatagliacuci.it/images/sartoria-tagliacuci-novara.jpg",
+
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Gnifetti 13B",
+    "addressLocality": "Novara",
+    "addressRegion": "NO",
+    "postalCode": "28100",
+    "addressCountry": "IT"
+  },
+
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.4498,
+    "longitude": 8.6218
+  },
+
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "12:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "15:30",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday"],
+      "opens": "09:00",
+      "closes": "12:30"
+    }
+  ],
+
+  "currenciesAccepted": "EUR",
+  "paymentAccepted": "Contanti, Carta di credito, Carta di debito",
+  "priceRange": "€–€€",
+
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Novara",
+      "sameAs": "https://www.wikidata.org/wiki/Q13375"
+    },
+    {
+      "@type": "City",
+      "name": "Borgomanero"
+    },
+    {
+      "@type": "City",
+      "name": "Arona"
+    },
+    {
+      "@type": "City",
+      "name": "Galliate"
+    },
+    {
+      "@type": "City",
+      "name": "Trecate"
+    },
+    {
+      "@type": "City",
+      "name": "Oleggio"
+    },
+    {
+      "@type": "City",
+      "name": "Vigevano"
+    }
+  ],
+
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servizi Sartoriali Tagliacuci",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Abiti su misura",
+          "description": "Realizzazione di abiti su misura per uomo e donna: completi, abiti da cerimonia, pantaloni, giacche.",
+          "areaServed": "Novara e provincia"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Riparazioni e aggiusture abiti",
+          "description": "Riparazioni rapide: orli, restringimenti, allargamenti, cambio zip, rimpicciolimenti e qualsiasi aggiustura.",
+          "areaServed": "Novara e provincia"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Abbigliamento da lavoro e divise",
+          "description": "Realizzazione e personalizzazione di abbigliamento da lavoro e divise professionali per aziende.",
+          "areaServed": "Novara e provincia"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Lavorazioni su pelle",
+          "description": "Riparazioni e lavorazioni artigianali su capi e accessori in pelle.",
+          "areaServed": "Novara e provincia"
+        }
+      }
+    ]
+  },
+
+  "sameAs": [
+    "https://www.google.com/maps/search/Sartoria+Tagliacuci+Novara"
+  ],
+
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "areaServed": "IT",
+    "availableLanguage": "Italian"
+  }
+}
