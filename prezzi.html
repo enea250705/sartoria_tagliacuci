@@ -473,11 +473,11 @@
         position: fixed;
         top: 70px; left: 0; right: 0;
         background: var(--white);
-        padding: 1.5rem 6vw 2rem;
-        gap: 1.2rem;
+        padding: 1rem 6vw 2rem;
+        gap: 1rem;
         border-bottom: 1px solid var(--gray-mid);
-        box-shadow: 0 8px 24px rgba(64,65,59,0.08);
-        z-index: 99;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        z-index: 1000;
       }
       .nav-links.open { display: flex; }
 
@@ -514,6 +514,7 @@
     /* ── Mobile (≤ 600px) ── */
     @media (max-width: 600px) {
       nav { padding: 0 5vw; height: 62px; }
+      .nav-links { top: 62px; }
       .nav-logo { font-size: 1.15rem; }
 
       .page-hero { padding-top: calc(62px + 2.5rem); padding-bottom: 3rem; }
@@ -572,13 +573,12 @@
   <nav id="navbar-prezzi">
     <a href="/" class="nav-logo">Sartoria <span>Tagliacuci</span></a>
     <ul class="nav-links" id="navLinksPrezzi">
+      <li><a href="/">Home</a></li>
       <li><a href="/servizi.html">Servizi</a></li>
       <li><a href="/prezzi.html" class="active">Prezzi</a></li>
-      <li><a href="/#perche">Chi Siamo</a></li>
-      <li><a href="/#zone">Zone Servite</a></li>
       <li><a href="/#contatti" class="nav-cta">Contattaci</a></li>
     </ul>
-    <button class="hamburger-btn" id="hamburgerPrezzi" aria-label="Menu" style="display:none;">
+    <button class="hamburger-btn" id="hamburgerPrezzi" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
   </nav>
