@@ -7,7 +7,7 @@
 
   <!-- Home page – priorità massima -->
   <url>
-    <loc>https://www.sartoriatagliacuci.it/</loc>
+    <loc>https://www.sartoriatagliacuci.com/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -15,7 +15,7 @@
 
   <!-- Pagina Servizi -->
   <url>
-    <loc>https://www.sartoriatagliacuci.it/servizi.html</loc>
+    <loc>https://www.sartoriatagliacuci.com/servizi.html</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -23,7 +23,7 @@
 
   <!-- Pagina Prezzi -->
   <url>
-    <loc>https://www.sartoriatagliacuci.it/prezzi.html</loc>
+    <loc>https://www.sartoriatagliacuci.com/prezzi.html</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -31,23 +31,15 @@
 
   <!-- Sezione Chi Siamo -->
   <url>
-    <loc>https://www.sartoriatagliacuci.it/#perche</loc>
+    <loc>https://www.sartoriatagliacuci.com/#perche</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Sezione Zone Servite -->
-  <url>
-    <loc>https://www.sartoriatagliacuci.it/#zone</loc>
-    <lastmod>2026-03-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <!-- Sezione Contatti -->
   <url>
-    <loc>https://www.sartoriatagliacuci.it/#contatti</loc>
+    <loc>https://www.sartoriatagliacuci.com/#contatti</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>

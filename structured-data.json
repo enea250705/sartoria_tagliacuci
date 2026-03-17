@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "ClothingStore"],
-  "@id": "https://www.sartoriatagliacuci.it/#business",
+  "@id": "https://www.sartoriatagliacuci.com/#business",
 
   "name": "Sartoria Tagliacuci",
   "legalName": "Sartoria Tagliacuci",
@@ -9,10 +9,12 @@
 
   "description": "Sartoria artigianale a Novara specializzata in riparazioni sartoriali, alterazioni, modifiche abiti e personalizzazione abbigliamento da lavoro. Via Gnifetti 13B.",
 
-  "url": "https://www.sartoriatagliacuci.it",
+  "url": "https://www.sartoriatagliacuci.com",
+  "telephone": "+39 377 083 9749",
+  "email": "info@sartoriatagliacuci.com",
 
-  "logo": "https://www.sartoriatagliacuci.it/favicon.svg",
-  "image": "https://www.sartoriatagliacuci.it/images/sartoria-tagliacuci-novara.jpg",
+  "logo": "https://www.sartoriatagliacuci.com/favicon.svg",
+  "image": "https://www.sartoriatagliacuci.com/images/sartoria-tagliacuci-novara.jpg",
 
   "address": {
     "@type": "PostalAddress",
@@ -94,6 +96,8 @@
   "contactPoint": {
     "@type": "ContactPoint",
     "contactType": "customer service",
+    "telephone": "+39 377 083 9749",
+    "email": "info@sartoriatagliacuci.com",
     "areaServed": "IT",
     "availableLanguage": "Italian"
   }

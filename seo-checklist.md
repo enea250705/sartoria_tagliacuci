@@ -11,7 +11,7 @@
 - [ ] Categoria secondaria: **Negozio di abbigliamento**, **Servizio di riparazione abbigliamento**
 - [ ] Indirizzo: Via Gnifetti 13B, 28100 Novara NO
 - [ ] Inserisci **numero di telefono** locale
-- [ ] Inserisci **sito web**: https://www.sartoriatagliacuci.it
+- [ ] Inserisci **sito web**: https://www.sartoriatagliacuci.com
 - [ ] Imposta orari di apertura esatti (incluse festività)
 - [ ] Zona di servizio: aggiungi Borgomanero, Arona, Galliate, Trecate, Oleggio, Vigevano
 - [ ] **Verifica il profilo** via cartolina postale o video
@@ -29,8 +29,8 @@
 ## ✅ 2. Google Search Console
 
 - [ ] Verifica il sito su [search.google.com/search-console](https://search.google.com/search-console)
-- [ ] Aggiungi proprietà `https://www.sartoriatagliacuci.it`
-- [ ] Invia sitemap: `https://www.sartoriatagliacuci.it/sitemap.xml`
+- [ ] Aggiungi proprietà `https://www.sartoriatagliacuci.com`
+- [ ] Invia sitemap: `https://www.sartoriatagliacuci.com/sitemap.xml`
 - [ ] Monitora copertura indicizzazione (Index Coverage)
 - [ ] Controlla errori di scansione nella sezione "Ispezione URL"
 - [ ] Monitora le query di ricerca (Performance): cerca keyword locali Novara
