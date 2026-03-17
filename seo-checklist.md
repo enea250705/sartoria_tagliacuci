@@ -17,7 +17,7 @@
 - [ ] **Verifica il profilo** via cartolina postale o video
 - [ ] Carica almeno 10 foto di qualità (interno, lavori, esterno negozio)
 - [ ] Carica l'immagine di copertina con il logo
-- [ ] Scrivi la **descrizione** con keyword: "sartoria Novara", "abiti su misura Novara", "riparazioni abiti"
+- [ ] Scrivi la **descrizione** con keyword: "sartoria Novara", "riparazioni abiti Novara", "sarto Novara centro"
 - [ ] Aggiorna la sezione Servizi con tutti i servizi e prezzi
 - [ ] Aggiungi il **menu prezzi** nel GBP
 - [ ] Pubblica un **post GBP ogni settimana** (offerte, lavori, notizie)
@@ -111,21 +111,17 @@ Mantieni **NAP consistente** (Name, Address, Phone) in tutti i siti:
 
 ### Keyword principali (Novara)
 - `sartoria Novara`
-- `abiti su misura Novara`
-- `sarto Novara`
 - `riparazioni abiti Novara`
+- `sarto Novara`
 - `aggiusture abiti Novara`
+- `modifiche sartoriali Novara`
 - `cambio zip Novara`
 - `orlo jeans Novara`
 
 ### Keyword per la zona servita (circondario)
-- `sartoria Borgomanero`
-- `sartoria Arona`
-- `sartoria Galliate`
-- `sartoria Trecate`
-- `sartoria Oleggio`
-- `abiti su misura Borgomanero`
-- `riparazioni abiti Arona`
+- `sartoria Novara Centro`
+- `riparazioni abiti Novara`
+- `modifiche abiti cerimonia Novara`
 
 > **Strategia**: usa queste keyword nelle sezioni "Zone Servite" del sito, nel GBP, nelle citazioni, nelle risposte alle recensioni.
 
@@ -134,9 +130,9 @@ Mantieni **NAP consistente** (Name, Address, Phone) in tutti i siti:
 ## ✅ 8. Contenuti & Blog (opzionale ma potente)
 
 - [ ] Crea un **blog o sezione notizie** sul sito
-- [ ] Articolo: "Come scegliere una sartoria a Novara"
+- [ ] Articolo: "Come scegliere una sartoria per riparazioni a Novara"
 - [ ] Articolo: "Quanto costa riparare un paio di jeans a Novara"
-- [ ] Articolo: "Abiti su misura per cerimonie: la guida completa"
+- [ ] Articolo: "Modifiche abiti da cerimonia: la guida completa"
 - [ ] Pubblica ogni articolo con una keyword locale come target
 - [ ] Condividi ogni articolo su GBP come post
 

@@ -7,7 +7,7 @@
   "legalName": "Sartoria Tagliacuci",
   "alternateName": "Tagliacuci Sartoria Novara",
 
-  "description": "Sartoria artigianale con unica sede a Novara. Specializzata in abiti su misura, riparazioni e aggiusture, abbigliamento da lavoro, divise professionali e lavorazioni su pelle. Serviamo Novara e tutta la provincia.",
+  "description": "Sartoria artigianale a Novara specializzata in riparazioni sartoriali, alterazioni, modifiche abiti e personalizzazione abbigliamento da lavoro. Via Gnifetti 13B.",
 
   "url": "https://www.sartoriatagliacuci.it",
 
@@ -64,8 +64,8 @@
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Abiti su misura",
-          "description": "Realizzazione di abiti su misura per uomo e donna: completi, abiti da cerimonia, pantaloni, giacche.",
+          "name": "Riparazioni e Alterazioni",
+          "description": "Accorciature pantaloni e abiti, stringere o allargare capi, rammendi e sostituzione zip.",
           "areaServed": "Novara e provincia"
         }
       },
@@ -73,8 +73,8 @@
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Riparazioni e aggiusture abiti",
-          "description": "Riparazioni rapide: orli, restringimenti, allargamenti, cambio zip, rimpicciolimenti e qualsiasi aggiustura.",
+          "name": "Modifiche e Adattamenti Sartoriali",
+          "description": "Modifiche su giacche, camicie, cappotti e adattamenti su abiti eleganti e da cerimonia.",
           "areaServed": "Novara e provincia"
         }
       },
@@ -82,8 +82,8 @@
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Abbigliamento da lavoro e divise",
-          "description": "Realizzazione e personalizzazione di abbigliamento da lavoro e divise professionali per aziende.",
+          "name": "Personalizzazione Abbigliamento da Lavoro",
+          "description": "Modifiche sartoriali e personalizzazione di divise e abbigliamento professionale.",
           "areaServed": "Novara e provincia"
         }
       },
@@ -91,8 +91,8 @@
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Lavorazioni su pelle",
-          "description": "Riparazioni e lavorazioni artigianali su capi e accessori in pelle.",
+          "name": "Sartoria per la Casa",
+          "description": "Orli su tende e tessuti per l'arredo casa.",
           "areaServed": "Novara e provincia"
         }
       }
