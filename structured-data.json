@@ -54,37 +54,7 @@
   "paymentAccepted": "Contanti, Carta di credito, Carta di debito",
   "priceRange": "€–€€",
 
-  "areaServed": [
-    {
-      "@type": "City",
-      "name": "Novara",
-      "sameAs": "https://www.wikidata.org/wiki/Q13375"
-    },
-    {
-      "@type": "City",
-      "name": "Borgomanero"
-    },
-    {
-      "@type": "City",
-      "name": "Arona"
-    },
-    {
-      "@type": "City",
-      "name": "Galliate"
-    },
-    {
-      "@type": "City",
-      "name": "Trecate"
-    },
-    {
-      "@type": "City",
-      "name": "Oleggio"
-    },
-    {
-      "@type": "City",
-      "name": "Vigevano"
-    }
-  ],
+  "areaServed": "Novara e provincia",
 
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
