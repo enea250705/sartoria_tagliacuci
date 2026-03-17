@@ -42,7 +42,7 @@
   "paymentAccepted": "Contanti, Carta di credito, Carta di debito",
   "priceRange": "€–€€",
 
-  "areaServed": "Novara e provincia",
+  "areaServed": "Novara",
 
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
@@ -54,7 +54,7 @@
           "@type": "Service",
           "name": "Riparazioni e Alterazioni",
           "description": "Accorciature pantaloni e abiti, stringere o allargare capi, rammendi e sostituzione zip.",
-          "areaServed": "Novara e provincia"
+          "areaServed": "Novara"
         }
       },
       {
@@ -63,7 +63,7 @@
           "@type": "Service",
           "name": "Modifiche e Adattamenti Sartoriali",
           "description": "Modifiche su giacche, camicie, cappotti e adattamenti su abiti eleganti e da cerimonia.",
-          "areaServed": "Novara e provincia"
+          "areaServed": "Novara"
         }
       },
       {
@@ -72,7 +72,7 @@
           "@type": "Service",
           "name": "Personalizzazione Abbigliamento da Lavoro",
           "description": "Modifiche sartoriali e personalizzazione di divise e abbigliamento professionale.",
-          "areaServed": "Novara e provincia"
+          "areaServed": "Novara"
         }
       },
       {
@@ -81,7 +81,7 @@
           "@type": "Service",
           "name": "Sartoria per la Casa",
           "description": "Orli su tende e tessuti per l'arredo casa.",
-          "areaServed": "Novara e provincia"
+          "areaServed": "Novara"
         }
       }
     ]
