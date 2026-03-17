@@ -157,7 +157,46 @@
     footer p { font-size: 0.8rem; margin-bottom: 0.5rem; }
     footer a { color: var(--accent); text-decoration: none; }
 
-    /* Animations */
+    /* ─── CTA CARD ─── */
+    .cta-card {
+      background: var(--dark);
+      color: var(--white);
+      padding: 4rem 3rem;
+      text-align: center;
+      margin-top: 5rem;
+      position: relative;
+    }
+    .cta-card h3 em { font-style: italic; color: var(--accent); }
+
+    .btn-primary {
+      background: var(--accent);
+      color: var(--white);
+      padding: 0.9rem 2.2rem;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+    .btn-primary:hover { background: var(--accent-light); }
+
+    .btn-outline-white {
+      background: transparent;
+      color: var(--white);
+      padding: 0.9rem 2.2rem;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-block;
+      border: 1px solid rgba(255,255,255,0.2);
+      transition: all 0.3s;
+    }
+    .btn-outline-white:hover { border-color: var(--white); }
+
     .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
     .reveal.visible { opacity: 1; transform: translateY(0); }
 
@@ -256,6 +295,17 @@
         <div class="card-num">10</div>
         <h3 class="card-title">Rifiniture Personalizzate</h3>
         <p class="card-text">Piccoli tocchi di classe e finiture sartoriali su richiesta per rendere ogni capo unico e rispondere ad ogni tua esigenza.</p>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-card reveal">
+      <p class="eyebrow" style="color:var(--accent); letter-spacing:0.2em; text-transform:uppercase; font-size:0.7rem; margin-bottom:1rem; font-weight:500;">Richiedi informazioni</p>
+      <h3 style="font-family:var(--font-display); font-size:clamp(1.8rem, 3vw, 2.5rem); font-weight:300; margin-bottom:1rem; color:var(--white);">Hai bisogno di una <em>consulenza?</em></h3>
+      <p style="color:rgba(255,255,255,0.6); margin-bottom:2rem; font-size:0.9rem; font-weight:300;">Portaci il tuo capo in negozio per un preventivo gratuito e immediato. Siamo pronti ad aiutarti.</p>
+      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+        <a href="/#contatti" class="btn-primary">Contattaci Ora</a>
+        <a href="/" class="btn-outline-white">Torna alla Home</a>
       </div>
     </div>
   </main>

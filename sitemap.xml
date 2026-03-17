@@ -8,23 +8,31 @@
   <!-- Home page – priorità massima -->
   <url>
     <loc>https://www.sartoriatagliacuci.it/</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Sezione Servizi (anchor sulla home) -->
+  <!-- Pagina Servizi -->
   <url>
-    <loc>https://www.sartoriatagliacuci.it/#servizi</loc>
-    <lastmod>2026-03-16</lastmod>
+    <loc>https://www.sartoriatagliacuci.it/servizi.html</loc>
+    <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+
+  <!-- Pagina Prezzi -->
+  <url>
+    <loc>https://www.sartoriatagliacuci.it/prezzi.html</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
 
   <!-- Sezione Chi Siamo -->
   <url>
     <loc>https://www.sartoriatagliacuci.it/#perche</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-03-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -32,7 +40,7 @@
   <!-- Sezione Zone Servite -->
   <url>
     <loc>https://www.sartoriatagliacuci.it/#zone</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-03-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -40,17 +48,9 @@
   <!-- Sezione Contatti -->
   <url>
     <loc>https://www.sartoriatagliacuci.it/#contatti</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-03-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
-  </url>
-
-  <!-- Pagina Prezzi -->
-  <url>
-    <loc>https://www.sartoriatagliacuci.it/prezzi.html</loc>
-    <lastmod>2026-03-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
   </url>
 
   <!-- Pagina 404 (non indicizzare, solo dichiarata) -->

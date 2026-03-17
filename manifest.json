@@ -22,7 +22,7 @@
     {
       "name": "Contattaci",
       "short_name": "Contatto",
-      "description": "Prenota un appuntamento",
+      "description": "Contattaci per informazioni",
       "url": "/#contatti",
       "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
     },
