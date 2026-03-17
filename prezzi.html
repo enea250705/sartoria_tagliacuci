@@ -111,7 +111,7 @@
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
-      z-index: 100;
+      z-index: 1000;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -122,7 +122,6 @@
       border-bottom: 1px solid var(--gray-mid);
       box-shadow: 0 2px 20px rgba(64,65,59,0.06);
     }
-
     .nav-logo {
       font-family: var(--font-display);
       font-size: 1.35rem;
@@ -132,11 +131,11 @@
       text-decoration: none;
     }
     .nav-logo span { color: var(--accent); }
-
     .nav-links {
       display: flex;
-      gap: 2.5rem;
+      gap: 2rem;
       list-style: none;
+      margin: 0; padding: 0;
     }
     .nav-links a {
       font-family: var(--font-body);
@@ -148,24 +147,39 @@
       text-decoration: none;
       transition: color 0.2s;
     }
-    .nav-links a:hover,
-    .nav-links a.active { color: var(--accent); }
-
-    .nav-cta {
+    .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+    .nav-links .nav-cta {
       background: var(--accent);
       color: var(--white) !important;
       padding: 0.5rem 1.2rem;
       border-radius: 2px;
     }
 
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 0.5rem;
+      z-index: 1100;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--dark);
+      transition: all 0.3s;
+    }
+
     /* ─── HERO PREZZI ─── */
     .page-hero {
-      padding-top: 70px;
       background: var(--dark);
       color: var(--white);
       text-align: center;
-      padding-bottom: 5rem;
       padding-top: calc(70px + 5rem);
+      padding-bottom: 5rem;
       position: relative;
       overflow: hidden;
     }
@@ -465,78 +479,41 @@
     }
 
     /* ── Tablet / large phone (≤ 900px) ── */
+    /* ─── RESPONSIVE ─── */
     @media (max-width: 900px) {
-      nav { padding: 0 5vw; }
       .nav-links {
         display: none;
         flex-direction: column;
         position: fixed;
         top: 70px; left: 0; right: 0;
         background: var(--white);
-        padding: 1rem 6vw 2rem;
-        gap: 1rem;
+        padding: 1.5rem 6vw 2.5rem;
+        gap: 1.2rem;
         border-bottom: 1px solid var(--gray-mid);
         box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         z-index: 1000;
       }
       .nav-links.open { display: flex; }
+      .hamburger { display: flex; }
 
-      /* Hamburger */
-      .hamburger-btn {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        cursor: pointer;
-        background: none;
-        border: none;
-        padding: 4px;
-      }
-      .hamburger-btn span {
-        display: block;
-        width: 24px;
-        height: 2px;
-        background: var(--dark);
-        transition: all 0.3s;
-      }
-
-      .page-hero { padding-top: calc(70px + 3.5rem); padding-bottom: 3.5rem; }
+      .page-hero { padding-top: calc(70px + 3.5rem) !important; padding-bottom: 3.5rem; }
       main { padding: 3.5rem 6vw 5rem; }
-
-      /* Quick-view price grid – 3 columns */
-      [style*="grid-template-columns: repeat(auto-fill"] {
-        grid-template-columns: repeat(3, 1fr) !important;
-      }
-
-      .cta-card { padding: 2.5rem 2rem; }
-      footer { flex-direction: column; text-align: center; gap: 0.5rem; padding: 1.5rem 6vw; }
     }
 
-    /* ── Mobile (≤ 600px) ── */
     @media (max-width: 600px) {
-      nav { padding: 0 5vw; height: 62px; }
+      nav { height: 62px; }
       .nav-links { top: 62px; }
       .nav-logo { font-size: 1.15rem; }
-
-      .page-hero { padding-top: calc(62px + 2.5rem); padding-bottom: 3rem; }
+      .page-hero { padding-top: calc(62px + 2.5rem) !important; padding-bottom: 3rem; }
       .page-title { font-size: clamp(2rem, 11vw, 3rem); }
       .page-sub { font-size: 0.88rem; }
-
       .breadcrumb { padding: 0.7rem 5vw; font-size: 0.74rem; }
-
       main { padding: 2.5rem 5vw 4rem; }
       .intro-note { padding: 1rem 1.2rem; font-size: 0.85rem; margin-bottom: 2.5rem; }
-
       .prezzi-section { margin-bottom: 2.5rem; }
       .prezzi-section h2 { font-size: clamp(1.5rem, 7vw, 2rem); }
-
       .prezzi-table td { padding: 0.75rem 0.2rem; font-size: 0.85rem; }
       .prezzi-table td.price-col { font-size: 1.2rem; }
-
-      /* Quick-view price grid – 2 columns */
-      [style*="grid-template-columns: repeat(auto-fill"] {
-        grid-template-columns: repeat(2, 1fr) !important;
-      }
-
       .cta-card { padding: 2rem 1.4rem; }
       .cta-card h3 { font-size: clamp(1.5rem, 7vw, 2rem); }
       .cta-btns { flex-direction: column; align-items: center; }
@@ -546,8 +523,7 @@
         text-align: center;
         padding: 0.85rem 1.5rem;
       }
-
-      footer { padding: 1.5rem 5vw; }
+      footer { padding: 1.5rem 5vw; flex-direction: column; text-align: center; gap: 0.5rem; }
       footer p { font-size: 0.72rem; }
     }
 
@@ -557,12 +533,6 @@
       .prezzi-table td { font-size: 0.8rem; }
       .prezzi-table td.price-col { font-size: 1.05rem; }
       .prezzi-section h2 { font-size: 1.5rem; }
-
-      /* Quick-view price grid – 1 column on tiny phones */
-      [style*="grid-template-columns: repeat(auto-fill"] {
-        grid-template-columns: 1fr !important;
-      }
-
       .intro-note { font-size: 0.82rem; }
     }
   </style>
@@ -821,29 +791,18 @@
     }, { threshold: 0.1 });
     revealEls.forEach(el => observer.observe(el));
 
-    // Hamburger menu toggle (shown via CSS at ≤900px)
+    // Hamburger menu toggle
     const hamburger = document.getElementById('hamburgerPrezzi');
     const navLinks  = document.getElementById('navLinksPrezzi');
 
-    // Show hamburger button via JS to avoid CSS display:none conflict
-    function checkNav() {
-      if (window.innerWidth <= 900) {
-        hamburger.style.display = 'flex';
-      } else {
-        hamburger.style.display = 'none';
-        navLinks.classList.remove('open');
-      }
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+      });
+      navLinks.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => navLinks.classList.remove('open'));
+      });
     }
-    checkNav();
-    window.addEventListener('resize', checkNav);
-
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-    });
-    navLinks.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => navLinks.classList.remove('open'));
-    });
   </script>
-
 </body>
 </html>
